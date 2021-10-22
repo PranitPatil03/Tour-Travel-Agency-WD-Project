@@ -13,7 +13,7 @@
     transition: all 0.2s ease ;
 }
 
-::selection{
+*::selection{
    background:var(--orange);
    color: white;
 }
@@ -110,14 +110,18 @@ header .search-bar-box label:hover{
 }
 .login-form-container{
     position: fixed;
-    left:-120%;right:0;
-    /* z-index: 1000; */
+    top:-120%;
+    left:0;
+    z-index: 1000;
     min-height:100vh;
     background:rgba(0,0,0,0.5);
     display: flex;
     align-items:center;
     justify-content:center;
     width:100%;
+}
+.login-form-container.active{
+   top:0;
 }
 .login-form-container form{
    margin: 2rem;
@@ -174,4 +178,55 @@ header .search-bar-box label:hover{
     color: white;
     font-size:5rem;
     cursor: pointer;
+}
+#menu-bar{
+    color:#fff;
+    border:.1rem solid #fff;
+    border-radius:.5rem;
+    padding:0.5rem 1.2rem;
+    font-size:2rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+@media (max-width: 1200px){
+    html{
+        font-size: 62%;
+    }
+}
+@media (max-width: 935px){
+    header{
+       padding: 2rem;
+    }
+}
+@media (max-width: 768px){
+
+    #menu-bar{
+        display: initial;
+    }
+    header .navbar{
+        padding: 1rem 2rem; 
+        position: absolute;
+        top:100%;right: 0;left: 0;
+        background:#666;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    }
+    header .navbar a{
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: .5rem;
+        display: block;
+        background: #333; 
+    }
+}
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
 }
