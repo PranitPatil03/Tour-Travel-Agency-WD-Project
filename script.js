@@ -8,6 +8,8 @@ let formClose=document.querySelector('#form-close');
 let menu=document.querySelector('#menu-bar');
 let navbar=document.querySelector('.navbar');
 
+let videoBtr=document.querySelectorAll('.vid-btr');
+
 window.onscroll=()=>{
     searchbtr.classList.remove('fa-times');
     searchbox.classList.remove('active');
@@ -31,4 +33,13 @@ formbtr.addEventListener('click',()=>{
 
 formClose.addEventListener('click',()=>{
     loginform.classList.remove('active');
+})
+
+videoBtr.forEach(btr=>{
+    btr.addEventListener('click',()=>{
+        document.querySelector('.controls .active').classList.remove('active');
+        btr.classList.add('active');
+        let src=btr.getAttribute('data-src');
+        document.querySelector('#video-slider').src=src;
+    })
 })
