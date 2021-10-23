@@ -237,6 +237,57 @@ header .search-bar-box label:hover{
 .home .controls .vid-btr.active{
     background:var(--orange);
 }
+.heading{
+    text-align:center;
+    padding:2.5rem 0;
+}
+.heading span{
+    font-size:3.5rem;
+    padding:.2rem 1rem;
+    background: rgba(255,165,0,0.2);
+    color: var(--orange);
+    border-radius: .5rem;
+}
+.heading span.space{
+    background: none;
+}
+.book .row{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+.book .row .image{
+   flex: 1 1 40rem;
+}
+.book .row .image img{ 
+   width: 100%;
+}
+.book .row form{ 
+/* font-size:2rem; */
+flex: 1 1 40rem;
+border-radius: .2rem;
+padding:2rem;
+box-shadow:0 1rem 2rem rgba(0,0,0,0.4);
+}
+.book .row form .inputBox{ 
+    padding: .2rem 0;   
+}
+.book .row form .inputBox input{ 
+    font-weight: 600;
+    font-size:1.7rem;
+    width: 100%;
+    color:#333;
+    padding:1rem; 
+    text-transform: none;
+    /* border:.1rem solid rgba(0,0,0,0.1); */
+}
+.book .row form .inputBox h3{ 
+    font-size:2rem;
+    color:#666;
+    padding:1rem 0; 
+}
+
 
 
 
