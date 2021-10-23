@@ -296,10 +296,11 @@ box-shadow:0 1rem 2rem rgba(0,0,0,0.4);
 .packages .box-container .box{
     flex: 1 1 30rem;
     overflow: hidden;
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.6);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.7);
     border-radius: .5rem;
     margin: 1rem;
 }
+
 .packages .box-container .box img{
   height: 20rem;
   width: 100%;
@@ -335,8 +336,34 @@ box-shadow:0 1rem 2rem rgba(0,0,0,0.4);
     text-decoration: line-through;
 }
 
-
-
+.Services .box-contanier{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.Services .box-contanier .box{
+    flex:1 1 30rem;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+.Services .box-contanier .box i{
+    padding: 1.5rem;
+    font-size:5rem;
+    color: var(--orange);
+}
+.Services .box-contanier .box h3{
+    font-size:2.5rem;
+    color: #333;
+}
+.Services .box-contanier .box p{
+    padding: 1rem 0;
+    font-size:1.5rem;
+    color: #666;
+}
+.Services .box-contanier .box:hover{
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.6);
+}
 
 
 
