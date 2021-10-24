@@ -364,6 +364,48 @@ box-shadow:0 1rem 2rem rgba(0,0,0,0.4);
 .Services .box-contanier .box:hover{
     box-shadow: 0 1rem 2rem rgba(0,0,0,.6);
 }
+.gallery .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.gallery .box-container .box{
+    position: relative;
+    flex: 1 1 30rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.7);
+    border-radius: .5rem;
+    margin: 1rem;
+    height:25rem;
+}
+.gallery .box-container .box img{
+    height:100%;
+    width: 100%;
+    object-fit:cover;
+  }
+.gallery .box-container .box .content{
+    position:absolute;
+    padding-top:5rem;  
+    text-align: center; 
+    top: -100%;
+    left: 0;
+    height:100%;
+    width:100%;
+    padding:2rem;   
+    background: rgba(0,0,0,.6);
+  }
+.gallery .box-container .box:hover .content{
+    top:0;
+}
+.gallery .box-container .box .content h3{
+    font-size:2rem;
+    color:var(--orange);
+}
+.gallery .box-container .box .content p{
+    font-size:2rem;
+    color:#eee;
+    padding:1rem 0;
+}
 
 
 
@@ -418,5 +460,8 @@ box-shadow:0 1rem 2rem rgba(0,0,0,0.4);
 @media (max-width: 450px){
     html{
         font-size: 50%;
+    }
+    .heading span{
+        font: size 2.5rem;
     }
 }
