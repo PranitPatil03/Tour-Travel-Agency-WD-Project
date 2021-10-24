@@ -406,7 +406,34 @@ box-shadow:0 1rem 2rem rgba(0,0,0,0.4);
     color:#eee;
     padding:1rem 0;
 }
-
+.review .review-slider{
+    padding-bottom: 2rem;
+}
+.review .box{
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.4);
+    text-align:center;
+}
+.review .box img{
+  border-radius:50%;
+  height:13rem;
+  width:13rem;
+  object-fit: cover;
+  margin-bottom:1rem;
+}
+.review .box h3{
+    color:#333;
+    font-size:2.5rem;
+}
+.review .box p{
+    color:#666;
+    font-size:1.5rem;
+}
+.review .box .stars i{
+    color: var(--orange);
+    font-size:1.4rem;
+}
 
 
 
