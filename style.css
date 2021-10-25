@@ -412,7 +412,7 @@ box-shadow:0 1rem 2rem rgba(0,0,0,0.4);
 .review .box{
     padding: 2rem;
     border-radius: .5rem;
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.4);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
     text-align:center;
 }
 .review .box img{
@@ -434,8 +434,14 @@ box-shadow:0 1rem 2rem rgba(0,0,0,0.4);
     color: var(--orange);
     font-size:1.4rem;
 }
-
-
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.contact .row .image{
+    flex: 1 1 30rem;
+}
 
 
 
